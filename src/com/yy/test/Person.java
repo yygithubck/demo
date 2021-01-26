@@ -4,7 +4,11 @@ public class Person {
 	private String name;
 	private int age;
 	private String address;
-	
+
+	public Person() {
+		super();
+	}
+
 	public Person(String name, int age) {
 		super();
 		this.name = name;
@@ -33,5 +37,12 @@ public class Person {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", address=" + address + ", getName()=" + getName()
+				+ ", getAge()=" + getAge() + ", getAddress()=" + getAddress() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 }
